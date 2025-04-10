@@ -1,0 +1,19 @@
+import random
+
+
+numero_aleatorio = random.randint(1,100)
+i = 0
+media = 0
+while i != 10:
+    palpite = int(input('escolha um numero: '))
+    i += 1
+    media += palpite
+    if palpite == numero_aleatorio:
+        print('parabens')
+        break
+    elif palpite < numero_aleatorio:
+        print('numero maior')
+    else:
+        print('numero menor')
+total = media/i
+print(f'{total:.2f}')
